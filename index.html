@@ -6,8 +6,8 @@
     <title>Unity WebGL Player | GameJam1</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=640 height=480 tabindex="-1" style="width: 640px; height: 480px; background: #231F20"></canvas>
-    <script src="Build/build240316.loader.js"></script>
+    <canvas id="unity-canvas" width=640 height=384 tabindex="-1" style="width: 640px; height: 384px; background: #231F20"></canvas>
+    <script src="Build/241123.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/build240316.data.unityweb",
-        frameworkUrl: "Build/build240316.framework.js.unityweb",
-        codeUrl: "Build/build240316.wasm.unityweb",
+        dataUrl: "Build/241123.data.unityweb",
+        frameworkUrl: "Build/241123.framework.js.unityweb",
+        codeUrl: "Build/241123.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "GameJam1",
